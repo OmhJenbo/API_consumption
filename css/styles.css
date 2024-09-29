@@ -1,0 +1,60 @@
+@import "variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+}
+#title {
+  padding-left: 1rem;
+  background-color: #321224;
+  color: white;
+}
+#navigation {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  background-color: #9a001d;
+  p {
+    margin-right: 1rem;
+    a {
+      color: white;
+      a:visited {
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  #navSection {
+    background-color: #9a001d;
+    #navigation {
+      display: block;
+      a {
+        color: white;
+        a:visited {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.movie_card{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  border: black 1px solid;
+  border-radius: 1rem;
+  width: 100%;
+  img{
+    width: 20%;
+    height: 80%;
+    margin-left: 1rem;
+  }
+  p{
+    
+  }
+}
