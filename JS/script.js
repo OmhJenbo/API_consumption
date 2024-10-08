@@ -8,22 +8,25 @@ const popularButton = document.getElementById("popular");
 const topRatedButton = document.getElementById("top_rated");
 const upcomingButton = document.getElementById("upcoming");
 
-nowPlayingButton.addEventListener('click', function(){
+nowPlayingButton.addEventListener('click', function(event){
+  event.preventDefault();
   fetchMovies('now_playing');
 });
-popularButton.addEventListener('click', function(){
+popularButton.addEventListener('click', function(event){
   fetchMovies('popular');
+  event.preventDefault();
 });
-topRatedButton.addEventListener('click', function(){
+topRatedButton.addEventListener('click', function(event){
   fetchMovies('top_rated');
+  event.preventDefault();
 });
-upcomingButton.addEventListener('click', function(){
+upcomingButton.addEventListener('click', function(event){
   fetchMovies('upcoming');
+  event.preventDefault();
 });
 
 function fetchMovies(category) {
   const url = baseUrl + '/movie/' + category + '?api_key=' + apiKey;
-
   fetch(url)
         .then(function(response) {
             return response.json(); // Convert response to JSON format
