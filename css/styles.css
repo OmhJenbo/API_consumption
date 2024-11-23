@@ -6,11 +6,11 @@
 }
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f0f0f0;
+  background-color: var(--primaryBgColor);
 }
 #title {
   background-color: var(--headerBackground);
-  color: white;
+  color: var(--titlePrimaryColor);
   padding: 0.2rem 1rem;
   
 }
@@ -19,16 +19,15 @@ body {
   padding: 0.2rem 1rem;
   background-color: var(--navBackgroundColor);
   position: sticky;
-  top: 0;
   ul li {
     margin-right: 1rem;
     float: right;
     padding: 0.5rem 1rem;
     list-style: none;
     button {
-      background-color: #9a001d;
+      background-color: var(--navBackgroundColor);
       border: none;
-      color: white;
+      color: var(--titlePrimaryColor);
       font-size: 1rem;
     }
     button:hover {
@@ -40,16 +39,28 @@ body {
 
 .movie_card{
   display: flex;
-  justify-content: center;
   margin-top: 2rem;
-  border: black 1px solid;
+  border: var(--primaryBorderColor) 1px solid;
   border-radius: 1rem;
-  width: 100%;
-  img{
-    width: 20%;
-    height: 80%;
+  margin-left: 2.5rem;
+  h3{
     margin-left: 1rem;
+    
+  }
+  #titleBackground{
+    background-color: var(--headerBackground);
+    color: var(--primaryBgColor);
+    padding: 0.2rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+    
+    
+  }
+  img{
+    width: 250px;
+    height: 350px;
     float: left;
+    margin-right: 1rem;
+    border-bottom-left-radius: 1rem;
   }
   
 }

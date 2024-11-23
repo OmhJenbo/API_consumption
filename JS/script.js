@@ -53,7 +53,9 @@ function displayMovies(movies) {
       // Add the movie details to the movie card
       movieCard.innerHTML = `
           <div>
+          <div id="titleBackground">
           <h3>${movie.title}</h3>
+          </div>
           <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="${movie.title}">
           <p><strong>Original title:</strong> ${movie.original_title}</p>
           <p><strong>Release date:</strong> ${movie.release_date}</p>

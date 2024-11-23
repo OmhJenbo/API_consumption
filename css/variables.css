@@ -1,4 +1,9 @@
     :root{
         --navBackgroundColor: #9a001d;
         --headerBackground: #321224;
+
+        --primaryBgColor: #f0f0f0;
+        --titlePrimaryColor: #ffffff;
+
+        --primaryBorderColor: #000000;
     }
